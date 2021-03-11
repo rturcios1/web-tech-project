@@ -1,0 +1,52 @@
+
+/* Text and Website Color */
+h1{font-family: 'Tenor Sans', sans-serif;
+    text-align: center;
+    font-size: 65px;}
+h2{font-family: 'Tenor Sans', sans-serif;}
+p{font-family: 'Montserrat', sans-serif;}
+ul{font-family: 'Montserrat', sans-serif;}
+li{font-family: 'Montserrat', sans-serif;}
+body{background-color:whitesmoke}
+
+/*  */
+.parallax {min-height: 500px;
+    background-image: url(website-design/IMG-4241.JPG);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    position: fixed top;}
+
+/* Navigation Bar */
+.nav{position:sticky top;
+top:0;}
+li.nav{display: inline;
+         margin-left:auto;
+         margin-right: auto;
+         width: 50%;
+        position: sticky;}
+ ul{
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+     width: 100%;
+     overflow: hidden;
+     background-color: #333;
+    opacity: 70%;
+    position:sticky}
+li {float: left;}
+li a {
+display: block;
+color:white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;}
+.about {text-align: center;
+ margin-left: auto;
+ margin-right: auto;
+ padding-top: 120px;
+ padding-bottom: 10px;}
+h1.nav {text-align: center;}
+
+/* Navigation Bar - Dropdown */
