@@ -38,17 +38,28 @@
       margin-left: auto;
       margin-right: auto;
       width: 75%;}
-  ul li {list-style-type: none;}
+  
     </style>
 </head>
 
 <body>
-    <ul class="nav">
-        <li><a href="index.html">HOME</a></li> 
-        <li><a href="about.html">ABOUT</a></li> 
-        <li><a href="destinations.html">DESTINATIONS</a></li> 
-        <li><a href="contact.html">CONTACT ME</a></li>  
-     </ul>
+    <nav>
+        <ul class="nav">
+            <li><a href="index.html">HOME</a></li> 
+            <li><a href="about.html">ABOUT</a></li> 
+            <li>
+              <div class="dropdown">
+              <button class="dropbtn">DESTINATIONS</button>
+              <div class="dropdown-content">
+                <a href="alegria.html">Alegria</a>
+                <a href="la-libertad.html">La Libertad</a>
+                <a href="suchitoto.html">Suchitoto</a>
+                 <a href="la-union.html">La Union</a>
+              </div>
+            </li>
+                <li><a href="contact.html">CONTACT ME</a></li>  
+          </ul>
+        </nav>
     <div class="parallax"></div>
     <h1>SUCHITOTO</h1>
     <table>
@@ -90,10 +101,10 @@
    <h2 id="restaurants">Best Restaurants</h2>
    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus eos exercitationem accusantium accusamus porro aperiam amet quod blanditiis ea. Eos ea vero quibusdam facere quae nemo rerum numquam est harum!</p>
     <ul>
-    <li>Casa 1800 https://www.facebook.com/HotelBoutiqueCasa1800Suchitoto/</li>
-     <li>Hotel los Almendros http://www.losalmendrosdesanlorenzo.com/</li>
-    <li>Casa de la Abuela https://www.facebook.com/CasadelaAbuelaSuchitoto/</li>
-    <li>Find more restaurants in Suchitoto here https://www.suchitoto-el-salvador.com/restaurantes.htm</li>
+    <li> <a href="https://www.facebook.com/HotelBoutiqueCasa1800Suchitoto/">Casa 1800</a></li>
+     <li> <a href="http://www.losalmendrosdesanlorenzo.com/">Los Almendros</a></li>
+    <li> <a href="https://www.facebook.com/CasadelaAbuelaSuchitoto/">La Casa de La Abuela</a></li>
+    <li> <a href="https://www.suchitoto-el-salvador.com/restaurantes.htm"> Find more restaurants here!</a> </li>
     </ul>
    <h2 id="experience">My Experience</h2>
    <p>I love visiting Suchitoto because of the old-school colorful houses. Slowly, it’s becoming rare to see traditional houses like the ones in Suchitoto. Because of this, the mayor of the town has set certain rules regarding house remodels. I also love going on boat rides near the man-made lake that helps generate the PERCENTAGE of El Salvador’s sustainable energy. When in Suchitoto there are also a number of craft workshops. The most popular workshop is with indigo. For some time, El Salvador was one of the main exporters of organic indigo and one of the biggest indigo farms are based in Suchitoto. Not only do they grow and cultivate the product, but they also host workshops to tie-dye fabrics using indigo.</p>
@@ -101,8 +112,32 @@
    <p>Here’s a Google Maps with all the locations and directions listed out. </p>
    <iframe src="https://www.google.com/maps/embed?pb=!1m40!1m12!1m3!1d138083.84764560653!2d-89.11953630889492!3d13.941211722854995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m25!3e0!4m5!1s0x8f636a26de4402eb%3A0x3220e953cf6234f8!2sCasa%20De%20Alejandro%20Cotto%2C%20Suchitoto%2C%20El%20Salvador!3m2!1d13.942054899999999!2d-89.0207111!4m5!1s0x8f636a184dcee3df%3A0x9028ae17eeb0a6e5!2sCascada%20Los%20Tercios-Suchitoto%20El%20Salvador%2C%20Carretera%20a%20Cinquera%20Suchitoto%2C%20El%20Salvador!3m2!1d13.9372913!2d-89.0130866!4m5!1s0x8f636a3d1fa1a6e9%3A0xac9f7dc8bcdb3620!2sCentro%20Arte%20Para%20La%20Paz%2C%20Suchitoto%2C%20El%20Salvador!3m2!1d13.9384146!2d-89.028748!4m5!1s0x8f6313f5782f5157%3A0x609a9f5d9b6abc!2sCihuatan%2C%20El%20Salvador!3m2!1d13.980779799999999!2d-89.1649446!5e0!3m2!1sen!2sus!4v1617410757178!5m2!1sen!2sus" width="1350" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 </div>
-<p><a href="index.html">RETURN HOME</a></p>
-<p><a href="sitemap.html">SITEMAP</a></p>
+<br>
+<br>
+<br>
+
+<footer>
+
+<p> <a href="index.html">RETURN HOME</a> </p>
+<p><a href="sitemap.html">SITEMAP</a> </p>
+
+
+</footer>
+
+<script>
+      function makeLight () {
+        const title = document.getElementById("title");
+        title.style.color = "#1c1c1c";
+    }
+    document.getElementById("title").onmouseover = makeLight
+
+    function makeBlack () {
+        const title = document.getElementById("title");
+        title.style.color = "#140005";
+
+    }
+    document.getElementById("title").onmouseout = makeBlack
+</script>
 
 </body>
 </html>

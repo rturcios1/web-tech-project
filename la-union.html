@@ -39,17 +39,28 @@
       margin-left: auto;
       margin-right: auto;
       width: 75%;}
-  ul li {list-style-type: none;}
+  
     </style>
 </head>
 
 <body>
-    <ul class="nav">
-        <li><a href="index.html">HOME</a></li> 
-        <li><a href="about.html">ABOUT</a></li> 
-        <li><a href="destinations.html">DESTINATIONS</a></li> 
-        <li><a href="contact.html">CONTACT ME</a></li>  
-     </ul>
+    <nav>
+        <ul class="nav">
+            <li><a href="index.html">HOME</a></li> 
+            <li><a href="about.html">ABOUT</a></li> 
+            <li>
+              <div class="dropdown">
+              <button class="dropbtn">DESTINATIONS</button>
+              <div class="dropdown-content">
+                <a href="alegria.html">Alegria</a>
+                <a href="la-libertad.html">La Libertad</a>
+                <a href="suchitoto.html">Suchitoto</a>
+                 <a href="la-union.html">La Union</a>
+              </div>
+            </li>
+                <li><a href="contact.html">CONTACT ME</a></li>  
+          </ul>
+        </nav>
     <div class="parallax"></div>
     <h1>LA UNION</h1>
     <table>
@@ -89,7 +100,28 @@
 
 </div>
  
-<p><a href="index.html">RETURN HOME</a></p>
-<p><a href="sitemap.html">SITEMAP</a></p>
+
+
+<footer>
+
+<p> <a href="index.html">RETURN HOME</a> </p>
+<p><a href="sitemap.html">SITEMAP</a> </p>
+
+
+</footer>
+<script>
+      function makeLight () {
+        const title = document.getElementById("title");
+        title.style.color = "#1c1c1c";
+    }
+    document.getElementById("title").onmouseover = makeLight
+
+    function makeBlack () {
+        const title = document.getElementById("title");
+        title.style.color = "#140005";
+
+    }
+    document.getElementById("title").onmouseout = makeBlack
+</script>
 </body>
 </html>

@@ -19,32 +19,117 @@
       img{
         float: left;
         padding-right: 30px;
-        width: 60%;
+        margin-bottom: 15px;
+        width:60%;
       }
+      footer {background-color: whitesmoke;}
+      p a {color: black;}
+
+      p a:hover {color: cadetblue;}
+      a:hover{color: cadetblue;}
+      .nav{position: fixed;
+            margin-bottom: 10px;}
+       li.nav{display: inline;
+                margin-left:auto;
+                margin-right: auto;
+                width: 50%;}
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            background-color: #BBC8CA;}
+li {float: left;}
+li a {
+  display: block;
+  color:white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;}
+  .about {text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 120px;
+        padding-bottom: 10px;}
+        button:hover {color: cadetblue;}
+
+
+.dropdown-content a:hover {color: cadetblue;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn { background-color: #BBC8CA;}
+
+
+
     </style>
 </head>
 <body>
+  <nav>
   <ul class="nav">
     <li><a href="index.html">HOME</a></li> 
-    <li><a href="about.html">ABOUT</a></li>
-    <li><a href="destinations.html">DESTINATIONS</a></li> 
-    <li><a href="contact.html">CONTACT ME</a></li>  
- </ul>
- <img src="website-design/conchagua.jpeg" alt="">
+    <li><a href="about.html">ABOUT</a></li> 
+    <li>
+      <div class="dropdown">
+      <button class="dropbtn">DESTINATIONS</button>
+      <div class="dropdown-content">
+        <a href="alegria.html">Alegria</a>
+        <a href="la-libertad.html">La Libertad</a>
+        <a href="suchitoto.html">Suchitoto</a>
+         <a href="la-union.html">La Union</a>
+      </div>
+    </li>
+        <li><a href="contact.html">CONTACT ME</a></li>  
+  </ul>
+</nav>
+ <img id="slideshow">
    <h2>ABOUT ME</h2> 
   <p>Hi! My name is Rosalia. Both of my parents are from El Salvador, so I visit every summer. Despite what you hear on the news, El Salvador is actually a lovely country and I wanted to share that with the world. On this blog you will find guides for visiting different parts of the country and lists of my top 5 restaurant and activity reccomendations.</p>
   <h2>FAVORITE SPOT</h2>
-  <p>At the moment the destination I recommend the most is <a href="la-union.html">La Union.</a> Most tourists like to stay in La Libertad and Suchitoto. La Union offers a similar experience as these two cities but can give you a more authentic experience because it is not over run by foreigners.</p>
+  <p>At the moment the destination I recommend the most is <span class="color"><a href="la-union.html">La Union.</a></span> Most tourists like to stay in La Libertad and Suchitoto. La Union offers a similar experience as these two cities but can give you a more authentic experience because it is not over run by foreigners.</p>
 
   <h2>CONTACT INFORMATION </h2>
   <hr>
-  <p><a href="https://github.com/rturcios1">github profile page</a></p>
+  <p><a href="https://github.com/rturcios1" class="link">github profile page</a></p>
   <hr>
-  <p><a href="https://www.instagram.com/rosaliaturcios">follow me on instagram</a></p>
+  <p><a href="https://www.instagram.com/rosaliaturcios" class="link">follow me on instagram</a></p>
   <hr>
-  <p><a href="mailto:rturcios1@babson.edu">email me</a></p>
+  <p><a href="mailto:rturcios1@babson.edu" class="link">email me</a></p>
   <hr>
-<p><a href="index.html">RETURN HOME</a></p>
-<p><a href="sitemap.html">SITEMAP</a></p>
+  <br>
+  <br>
+  <br>
+  
+<footer>
+
+<p> <a href="index.html">RETURN HOME</a> </p>
+<p><a href="sitemap.html">SITEMAP</a> </p>
+
+
+</footer>
+<script>
+  //make a slideshow of the images that are already in the the website design folder 
+ 
+      const gallery = [
+        "website-design/alegria.jpeg",
+        "website-design/cafealbania.jpeg",
+        "website-design/conchagua.jpeg",
+        "website-design/libertad.jpeg",
+        "website-design/suchi.jpeg",]
+        
+        let i = 0;
+
+        function slideShow(){
+            let slideshowImage = document.getElementById("slideshow");
+            if (i=== gallery.length) {i=0;}
+            slideshowImage.src = gallery[i]; i++
+            setTimeout(slideShow, 5000);
+        }
+        document.querySelector("body").onload = slideShow
+
+  
+
+
+</script>
 </body>
 </html>

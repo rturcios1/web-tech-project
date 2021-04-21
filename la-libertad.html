@@ -38,17 +38,27 @@
       margin-left: auto;
       margin-right: auto;
       width: 75%;}
-  ul li {list-style-type: none;}
     </style>
 </head>
 
 <body>
-    <ul class="nav">
-        <li><a href="index.html">HOME</a></li> 
-        <li><a href="about.html">ABOUT</a></li> 
-        <li><a href="destinations.html">DESTINATIONS</a></li> 
-        <li><a href="contact.html">CONTACT ME</a></li>  
-     </ul>
+    <nav>
+        <ul class="nav">
+            <li><a href="index.html">HOME</a></li> 
+            <li><a href="about.html">ABOUT</a></li> 
+            <li>
+              <div class="dropdown">
+              <button class="dropbtn">DESTINATIONS</button>
+              <div class="dropdown-content">
+                <a href="alegria.html">Alegria</a>
+                <a href="la-libertad.html">La Libertad</a>
+                <a href="suchitoto.html">Suchitoto</a>
+                 <a href="la-union.html">La Union</a>
+              </div>
+            </li>
+                <li><a href="contact.html">CONTACT ME</a></li>  
+          </ul>
+        </nav>
     <div class="parallax"></div>
     <h1>LA LIBERTAD</h1>
     <table>
@@ -85,14 +95,14 @@
    <ul>
     <li> <a href="https://www.facebook.com/labonitabeachclubeltunco/">La Bonita Beach Club</a></li>
     <li> <a href = "https://www.facebook.com/BetosRestauranteLaLibertad/">La Ola Betos</a></li>
-    <li><a href "https://es-la.facebook.com/AcantiladosElSalvador/">Acantilados</a></li>
+    <li><a href ="https://es-la.facebook.com/AcantiladosElSalvador/">Acantilados</a></li>
     <li><a href = "https://www.facebook.com/NAWIBeachHouse/">Nawi Beachhouse</a></li>
     </ul>
 
     <p> Given that La Libertad is only 40 minutes away from the city, I would also recommend dining out at one of the restaurants in San Salvador.</p>
     <ul>
     <li><a href="https://www.facebook.com/pages/category/Hotel/Felix-y-Olivia-105905174364660/">Felix y Olivia</a></li>
-    <li>Circo</li>
+    <li><a href = "https://www.instagram.com/circobar/?hl=en">Circo</a></li>
     <li><a href="https://www.facebook.com/NomadaBarSv/">Nomada</a></li>
     </ul>
 
@@ -104,7 +114,31 @@
    <iframe src="https://www.google.com/maps/embed?pb=!1m46!1m12!1m3!1d248246.86467053805!2d-89.62586450063041!3d13.544346498871434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m31!3e0!4m5!1s0x8f7cd5f8e14eb3a3%3A0xf01fc360471391c8!2sLa%20Bonita%20Beach%20Club%2C%20Tamanique%2C%20El%20Salvador!3m2!1d13.4931667!2d-89.3846744!4m5!1s0x8f62d5a24432c311%3A0xdc735d12f9b21195!2sTamanique%2C%20El%20Salvador!3m2!1d13.5965323!2d-89.41864729999999!4m5!1s0x8f7cd3866072c741%3A0x167b79656d1a9f37!2sAcantilados%2C%20La%20Libertad%2C%20El%20Salvador!3m2!1d13.4921522!2d-89.3744049!4m5!1s0x8f7d33212879e08d%3A0xd441da992f98e2c2!2sNAWi%20Beach%20House%2C%20Mizata%2C%20El%20Salvador!3m2!1d13.5109709!2d-89.59683009999999!4m5!1s0x8f7d2a7c25fe3963%3A0x2844d14a16744fb3!2sBeto%C2%B4s%20La%20Libertad%2C%20mariscos%20El%20Salvador%20Restaurante%20de%20Mariscos%2C%20Pasta%2C%20Pizza%20y%20Carnes%2C%20Tamanique%2C%20El%20Salvador!3m2!1d13.494797!2d-89.4069413!5e0!3m2!1sen!2sus!4v1617411409361!5m2!1sen!2sus" width="1350" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 </div>
  
-<p><a href="index.html">RETURN HOME</a></p>
-<p><a href="sitemap.html">SITEMAP</a></p>
+<br>
+<br>
+<br>
+
+<footer>
+
+<p> <a href="index.html">RETURN HOME</a> </p>
+<p><a href="sitemap.html">SITEMAP</a> </p>
+
+
+</footer>
+
+<script>
+      function makeLight () {
+        const title = document.getElementById("title");
+        title.style.color = "#1c1c1c";
+    }
+    document.getElementById("title").onmouseover = makeLight
+
+    function makeBlack () {
+        const title = document.getElementById("title");
+        title.style.color = "#140005";
+
+    }
+    document.getElementById("title").onmouseout = makeBlack
+</script>
 </body>
 </html>

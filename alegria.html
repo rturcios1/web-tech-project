@@ -28,7 +28,10 @@
             margin-right: auto;
             width: 60%;
             font-family: Arial, Helvetica, sans-serif;
-            border-collapse: collapse;}
+            border-collapse: collapse;
+    }
+    table a {color: black;}
+    table a:hover {color: cadetblue;}
         td, th{border-right: lightgray 3px solid;}
         a{text-decoration: none;
         padding-left: 8px;
@@ -42,14 +45,25 @@
 </head>
 
 <body>
+    <nav>
     <ul class="nav">
         <li><a href="index.html">HOME</a></li> 
         <li><a href="about.html">ABOUT</a></li> 
-        <li><a href="destinations.html">DESTINATIONS</a></li> 
-        <li><a href="contact.html">CONTACT ME</a></li>  
-     </ul>
+        <li>
+          <div class="dropdown">
+          <button class="dropbtn">DESTINATIONS</button>
+          <div class="dropdown-content">
+            <a href="alegria.html">Alegria</a>
+            <a href="la-libertad.html">La Libertad</a>
+            <a href="suchitoto.html">Suchitoto</a>
+             <a href="la-union.html">La Union</a>
+          </div>
+        </li>
+            <li><a href="contact.html">CONTACT ME</a></li>  
+      </ul>
+    </nav>
     <div class="parallax"></div>
-    <h1>ALEGRIA</h1>
+    <h1 id="title">ALEGRIA</h1>
     <table>
           <tr id="space">
               <td></td>
@@ -95,7 +109,31 @@
    
 </div>
  
-<p><a href="index.html">RETURN HOME</a></p>
-<p><a href="sitemap.html">SITEMAP</a></p>
+<br>
+<br>
+<br>
+
+<footer>
+
+<p> <a href="index.html">RETURN HOME</a> </p>
+<p><a href="sitemap.html">SITEMAP</a> </p>
+
+
+</footer>
+<script>
+    function makeLight () {
+        const title = document.getElementById("title");
+        title.style.color = "#1c1c1c";
+    }
+    document.getElementById("title").onmouseover = makeLight
+
+    function makeBlack () {
+        const title = document.getElementById("title");
+        title.style.color = "#140005";
+
+    }
+    document.getElementById("title").onmouseout = makeBlack
+
+</script>
 </body>
 </html>

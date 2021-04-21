@@ -28,20 +28,67 @@
     .contact-cap {text-align: center;}
     .bold{font-weight: bold;}
     .floor{position: fixed bottom;}
+    footer {background-color: whitesmoke;}
+      p a {color: black;}
+      p a:hover {color: cadetblue;}
+      a:hover{color: cadetblue;}
+      .nav{position: fixed;
+            margin-bottom: 10px;}
+       li.nav{display: inline;
+                margin-left:auto;
+                margin-right: auto;
+                width: 50%;}
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            background-color: #BBC8CA;}
+li {float: left;}
+li a {
+  display: block;
+  color:white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;}
+  .about {text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 120px;
+        padding-bottom: 10px;}
+        button:hover {color: cadetblue;}
+
+.dropdown-content a:hover {color: cadetblue;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn { background-color: #BBC8CA;}
     </style>
 </head>
 <body>
     <body>
+        <nav>
         <ul class="nav">
             <li><a href="index.html">HOME</a></li> 
             <li><a href="about.html">ABOUT</a></li> 
-            <li><a href="topics.html">DESTINATIONS</a></li> 
-            <li><a href="contact.html">CONTACT ME</a></li>  
-         </ul>
+            <li>
+              <div class="dropdown">
+              <button class="dropbtn">DESTINATIONS</button>
+              <div class="dropdown-content">
+                <a href="alegria.html">Alegria</a>
+                <a href="la-libertad.html">La Libertad</a>
+                <a href="suchitoto.html">Suchitoto</a>
+                 <a href="la-union.html">La Union</a>
+              </div>
+            </li>
+                <li><a href="contact.html">CONTACT ME</a></li>  
+          </ul>
+        </nav>
+        
          <div class="parallax"></div>
         <h1>Contact Me</h1>
         <p class="contact-cap">Got a question or feedback? We'd love to hear from you. Send us a message and we'll response as soon as possible. </p>
-        <form action="post" action="/">
+        <form action="post" action="/" id="contact">
         <div>
             <p class="bold">Your Information</p>
             <div class="space">
@@ -91,13 +138,36 @@
              <label for="sign me up" >Sign me up for your newsletter:</label>
              
              </div>
-             <div class="space"> <button >Submit</button></div>
+             <div class="space"> <button id="submit">Submit</button></div>
+             <br>
+             <br>
+             <br>
              
-        
-<div id="floor" class="space">
-    <a href="index.html">Return Home</a>
-    <a href="sitemap.html">sitemap</a>
+<footer>
+    
+    <p> <a href="index.html">RETURN HOME</a> </p>
+    <p><a href="sitemap.html">SITEMAP</a> </p>
+  
+
+</footer>
+   
 </div>
+<script>
+     //if fields are empty send an alert to put text 
+     function complete (){
+    const form = document.getElementById("contact");
+let e = form.email.value;
+if(e === "") {alert ("Please enter a Value")};
+let n = form.name.value;
+if(n === "") {alert ("Please enter a Name")};
+let s = form.subject.value;
+if(s === "") {alert ("Please enter a Subject")};
+let m = form.message.value;
+if(m === "") {alert ("Please enter a Message")};
+}
+     document.getElementById("submit").onclick = complete 
+
+</script>
 
 </body>
 </html>
